@@ -1,0 +1,4 @@
+package personas;
+
+class Profesor {
+}
