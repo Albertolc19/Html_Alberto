@@ -9,4 +9,12 @@ public class Producto extends TiendaRopa{
         this.marca = marca;
         this.tipo = tipo;
     }
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "tipo='" + tipo + '\'' +
+                ", marca='" + marca + '\'' +
+                '}';
+    }
 }

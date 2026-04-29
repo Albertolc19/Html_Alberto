@@ -8,19 +8,29 @@ import java.util.Collections;
 public class Main {
     public static void main(String[] args) {
         String[] equipo={"David", "Sergio", "Manuel", "Juan", "Pepe"};
+        System.out.println("Ordenado Ascendente:");
         Arrays.sort(equipo);
         for(String i: equipo){
             System.out.println(i+", ");
         }
+        System.out.println("Ordenado Descendente:");
         Arrays.sort(equipo, Collections.reverseOrder());
         for(String i: equipo){
             System.out.println(i+", ");
         }
-        int[] numAleatorios={
-        for() {
-            ((int) Math.random() * 100) + 1
+        Integer[] numAleatorios=new Integer[10];
+        for(int i=0;i<numAleatorios.length;i++) {
+            numAleatorios[i] = (int) ((Math.random() * 100) + 1);
         }
-        };
-
+        Arrays.sort(numAleatorios);
+        System.out.println("Ordenado Ascendente:");
+        for(int i: numAleatorios){
+            System.out.println(i+", ");
+        }
+        System.out.println("Ordenado Descendente:");
+        Arrays.sort(numAleatorios, Collections.reverseOrder());
+        for(int i: numAleatorios){
+            System.out.println(i+", ");
+        }
     }
 }

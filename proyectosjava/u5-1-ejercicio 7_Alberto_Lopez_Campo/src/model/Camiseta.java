@@ -23,4 +23,13 @@ public class Camiseta extends Producto implements IReservable {
             return "Se reservo la camiseta exitosamente";
         }
     }
+
+    @Override
+    public String toString() {
+        return "Camiseta{" +
+                "numBolsos=" + numBolsos +
+                ", reservado=" + reservado +
+                ", fecha=" + fecha +
+                '}';
+    }
 }

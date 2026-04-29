@@ -1,11 +1,13 @@
 package model;
 
-public class Calzado extends Producto{
-    int[] tallas;
+import java.util.Arrays;
 
-    public Calzado(String nombre, String direccion, String ciudad, String marca, String tipo, int[] tallas) {
+public class Calzado extends Producto{
+    int[] tallas=new int[2];
+
+    public Calzado(String nombre, String direccion, String ciudad, String marca, String tipo, int talla) {
         super(nombre, direccion, ciudad, marca, tipo);
-        this.tallas = tallas;
+        this.tallas[0]=talla;
         conseguirLetra();
     }
 
@@ -19,5 +21,12 @@ public class Calzado extends Producto{
         } else if (tallas[0]>=47&&tallas[0]<=50) {
             tallas[1]='X';
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Calzado{" +
+                "tallas=" + "[" + tallas[0] + ", " + (char)tallas[1] + "]" +
+                '}';
     }
 }
