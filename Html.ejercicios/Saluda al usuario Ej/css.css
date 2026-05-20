@@ -1,0 +1,29 @@
+body {
+  font-family: serif;
+  background-color: white;
+}
+
+.contenedor {
+  width: 280px;
+  padding: 12px;
+  border-top: 2px solid #d9d9d9;
+  border-left: 2px solid #d9d9d9;
+  margin: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input {
+  width: 120px;
+  height: 20px;
+  border: 1px solid #999;
+}
+
+button {
+  padding: 2px 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
