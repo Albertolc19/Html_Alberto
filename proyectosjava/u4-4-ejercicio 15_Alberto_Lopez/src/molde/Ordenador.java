@@ -57,13 +57,4 @@ public class Ordenador {
             return "No se puede ejecutar un programa porque el ordenador está apagado.";
         }
     }
-        
-        public void funcionarConBateria() {
-            if (bateria > 20) {
-                System.out.println("El portátil cuyo nombre es " + nombre +
-                        " está funcionando con batería a un estado de la batería cuyo valor es " + bateria);
-            } else {
-                System.out.println("La batería es demasiado baja para funcionar");
-            }
-    }
 }

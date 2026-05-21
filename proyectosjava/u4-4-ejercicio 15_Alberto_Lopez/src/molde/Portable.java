@@ -1,6 +1,6 @@
 package molde;
 
 public interface Portable {
-    void cargarBateria();
-    void usarBateria();
+    public void cargarBateria();
+    public String funcionarConBateria();
 }
