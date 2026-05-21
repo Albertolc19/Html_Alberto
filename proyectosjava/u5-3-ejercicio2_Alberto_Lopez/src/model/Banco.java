@@ -37,4 +37,15 @@ public class Banco {
     public void setClientes(List<Cliente> clientes) {
         this.clientes = clientes;
     }
+
+    public String buscarCliente(Cliente cliente){
+        String resultado="El cliente no esta en el banco";
+        for(Cliente todosClientes:clientes) {
+            if (cliente == todosClientes) {
+                resultado = "El cliente esta en el banco";
+            }
+        }
+        return resultado;
+    }
+
 }

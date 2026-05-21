@@ -29,6 +29,15 @@ public class Main {
         banco.anadirCuenta(cuenta4);
         banco.anadirCuenta(cuenta5);
         System.out.println(banco.getCuentas());
-        System.out.println(banco.);
+        System.out.println(banco.buscarCliente(c1));
+        System.out.println(banco.getCuentas().get(2));
+        System.out.println(banco.getClientes().get(banco.getClientes().size()-1));
+        banco.getCuentas().remove(2);
+        System.out.println(banco.getCuentas());
+        banco.getClientes().clear();
+        System.out.println(banco.getClientes());
+        Cuenta c6=new Cuenta(006,4000);
+        banco.getCuentas().add(2,c6);
+        System.out.println(banco.getCuentas());
     }
 }
